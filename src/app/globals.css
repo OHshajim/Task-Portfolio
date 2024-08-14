@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.progress-error::-webkit-progress-value {
+    --tw-bg-opacity: 1;
+    background-color: #FD6F00 !important;
+}
+.progress{
+    height: 12px !important;
+}
