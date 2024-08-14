@@ -4,7 +4,7 @@ import Nav from "@/Components/Nav";
 
 export default function Home() {
   return (
-    <main className="container mx-auto select-none">
+    <main className="container mx-auto select-none flex flex-col gap-10">
       <Nav/>
       <Introduction/>
       <About/>
