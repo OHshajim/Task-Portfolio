@@ -5,6 +5,14 @@ const Nav = () => {
     <>
       <li>
         <a
+          href="#home"
+          className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
           href="#about"
           className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
         >
@@ -13,18 +21,10 @@ const Nav = () => {
       </li>
       <li>
         <a
-          href="#education"
-          className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
-        >
-          Education
-        </a>
-      </li>
-      <li>
-        <a
           href="#skills"
           className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
         >
-          Skills
+          Services
         </a>
       </li>
       <li>
@@ -33,6 +33,14 @@ const Nav = () => {
           className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
         >
           projects
+        </a>
+      </li>
+      <li>
+        <a
+          href="#testimonials"
+          className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
+        >
+          Testimonials
         </a>
       </li>
       <li>
