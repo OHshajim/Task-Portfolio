@@ -107,7 +107,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div>
+    <div id="projects">
       <SectionTitle title={"My Projects"} />
       <div className="flex justify-center items-center gap-5 my-4 ">
         {buttons.map((button) => (
