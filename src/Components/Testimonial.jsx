@@ -40,7 +40,7 @@ const Testimonial = () => {
   ];
 
   return (
-    <div>
+    <div id="testimonials">
       <SectionTitle
         title={"Testimonials"}
         SubTitle={

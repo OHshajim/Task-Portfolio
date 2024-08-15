@@ -21,7 +21,7 @@ const Nav = () => {
       </li>
       <li>
         <a
-          href="#skills"
+          href="#services"
           className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
         >
           Services

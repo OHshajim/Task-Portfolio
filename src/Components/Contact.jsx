@@ -2,7 +2,7 @@ import SectionTitle from "@/Shared/SectionTitle";
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contact">
       <SectionTitle
         title={"Lets Design Together"}
         SubTitle={

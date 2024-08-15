@@ -29,7 +29,7 @@ const Service = () => {
     },
   ];
   return (
-    <div>
+    <div id="services">
       <SectionTitle
         title={"Services"}
         SubTitle={
