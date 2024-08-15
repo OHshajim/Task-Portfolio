@@ -25,7 +25,7 @@ const About = () => {
               Web designer passionate about creating beautiful, functional
               websites. I specialize in responsive design and intuitive user
               experiences. My goal is to bring your vision to life with
-              creativity and precision. Let's build something amazing together!
+              creativity and precision. Lets build something amazing together!
             </p>
             <div className="flex flex-col gap-4">
               <div>

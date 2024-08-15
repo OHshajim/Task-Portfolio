@@ -3,7 +3,12 @@ import SectionTitle from "@/Shared/SectionTitle";
 const Contact = () => {
   return (
     <div>
-      <SectionTitle title={"Lets Design Together"} />
+      <SectionTitle
+        title={"Lets Design Together"}
+        SubTitle={
+          "Get in Touch: Reach Out to Us for Inquiries, Collaborations, or Support. We’re Here to Help and Look Forward to Connecting with You!"
+        }
+      />
       <div className="flex flex-col sm:flex-row justify-center items-center my-10 px-5">
         <input
           type="email"

@@ -108,7 +108,12 @@ const Projects = () => {
   ];
   return (
     <div id="projects">
-      <SectionTitle title={"My Projects"} />
+      <SectionTitle
+        title={"My Projects"}
+        SubTitle={
+          "Explore Our Work: Showcasing a Diverse Range of Projects That Demonstrate Our Expertise. See How We've Transformed Ideas into Successful Solutions."
+        }
+      />
       <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 md:gap-5 my-4">
         {buttons.map((button) => (
           <button

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import SectionTitle from "@/Shared/SectionTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -40,7 +41,12 @@ const Testimonial = () => {
 
   return (
     <div>
-      <SectionTitle title={"Testimonials"} />
+      <SectionTitle
+        title={"Testimonials"}
+        SubTitle={
+          "Client Testimonials: Hear from Those Who've Experienced Our Services Firsthand. Discover the Impact We've Made on Their Success."
+        }
+      />
       <div>
         <Swiper
           centeredSlides={true}

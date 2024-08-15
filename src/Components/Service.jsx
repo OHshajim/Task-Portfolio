@@ -30,7 +30,12 @@ const Service = () => {
   ];
   return (
     <div>
-      <SectionTitle title={"Services"} />
+      <SectionTitle
+        title={"Services"}
+        SubTitle={
+          "Discover Our Expertise: Comprehensive Services Tailored to Meet Your Needs. Explore How We Can Help Elevate Your Business."
+        }
+      />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 m-5">
         {services.map((service) => (
           <div key={service.service} className="p-5 bg-[#F8F8F8] rounded-xl">

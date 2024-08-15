@@ -38,7 +38,7 @@ const Introduction = () => {
               stunning and user-friendly websites that help businesses thrive
               online. With a keen eye for detail and a deep understanding of
               design principles, I craft unique digital experiences tailored to
-              meet your brand's needs.
+              meet your brands needs.
             </p>
             <button className="text-white btn bg-[#FD6F00] hover:bg-[#fd6e00cc] px-4 py-2 sm:px-6 sm:py-3 rounded-md">
               Hire Me
