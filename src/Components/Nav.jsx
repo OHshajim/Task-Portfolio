@@ -87,8 +87,8 @@ const Nav = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{Links}</ul>
       </div>
-      <div className="navbar-end">
-        <a href="/CV.pdf" className="btn" download>
+      <div className="navbar-end ">
+        <a href="/CV.pdf" className="btn text-white  bg-[#FD6F00] hover:bg-[#fd6e00cc]" download>
           Download CV
         </a>
       </div>

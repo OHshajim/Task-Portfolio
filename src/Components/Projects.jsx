@@ -109,25 +109,27 @@ const Projects = () => {
   return (
     <div id="projects">
       <SectionTitle title={"My Projects"} />
-      <div className="flex justify-center items-center gap-5 my-4 ">
+      <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 md:gap-5 my-4">
         {buttons.map((button) => (
-          <button key={button.name}
+          <button
+            key={button.name}
             onClick={() => ProjectFiltered(button.name)}
-            className="text-xl px-3 py-2 border border-[#545454] focus:border-none focus:bg-[#FD6F00] focus:text-white hover:bg-[#FD6F00] hover:border-none hover:text-white  text-semibold rounded-xl "
+            className="text-base sm:text-lg md:text-xl px-3 py-2 border border-[#545454] focus:outline-none focus:bg-[#FD6F00] focus:text-white hover:bg-[#FD6F00] hover:border-none hover:text-white font-semibold rounded-xl transition-all duration-200"
           >
-           {button.name}
+            {button.name}
           </button>
         ))}
       </div>
-      <div className="grid xl:grid-cols-3 lg:grid-cols-2  gap-5">
+
+      <div className="grid gap-5 my-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <div
             key={project.id}
-            className=" flex flex-col justify-center items-center"
+            className="flex flex-col justify-center items-center my-4"
           >
-            <div>
-              <div className="relative bg-[#FFEBDB] px-4">
-                <div className="absolute -bottom-1 ">
+            <div className="relative bg-[#FFEBDB] p-4">
+              <div className="relative">
+                <div className="absolute -bottom-1 left-0">
                   <Image
                     src={project.frontPhoto}
                     alt={project.name}
@@ -135,7 +137,7 @@ const Projects = () => {
                     height={400}
                   />
                 </div>
-                <div className=" ml-20 ">
+                <div className=" ml-20">
                   <Image
                     src={project.backPhoto}
                     alt={project.name}
@@ -144,11 +146,11 @@ const Projects = () => {
                   />
                 </div>
               </div>
-              <h3 className="text-lg mt-4 text-[#FD6F00] hover:text-white text-semibold">
-                {project.name}
-              </h3>
-              <p className="text-2xl font-bold ">{project.title}</p>
             </div>
+            <h3 className="text-lg mt-4 text-[#FD6F00] hover:text-white font-semibold">
+              {project.name}
+            </h3>
+            <p className="text-2xl font-bold">{project.title}</p>
           </div>
         ))}
       </div>

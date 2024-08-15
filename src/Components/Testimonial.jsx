@@ -43,8 +43,6 @@ const Testimonial = () => {
       <SectionTitle title={"Testimonials"} />
       <div>
         <Swiper
-          slidesPerView={2}
-          spaceBetween={50}
           centeredSlides={true}
           pagination={{
             clickable: true,
@@ -54,28 +52,42 @@ const Testimonial = () => {
             disableOnInteraction: false,
           }}
           loop={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 50,
+            },
+          }}
           modules={[Autoplay, Pagination]}
           className="mySwiper"
         >
           {feedbacks.map((feedback) => (
             <SwiperSlide key={feedback.id}>
-              <div className="flex flex-col items-center pb-10 bg-[#F8F8F8] mb-10">
-                <div className="w-full  px-3 sm:px-10">
-                  <div className="flex md:items-center justify-between  py-4 flex-col md:flex-row">
+              <div className="flex flex-col items-center pb-10 bg-[#F8F8F8] mb-10 mx-5">
+                <div className="w-full px-3 sm:px-10">
+                  <div className="flex md:items-center justify-between py-4 flex-col md:flex-row">
                     <div className="pr-4">
                       <Image
                         src={feedback.photo}
                         alt={feedback.name}
                         width={180}
                         height={180}
-                        className=" rounded-full p-1 border-2 border-blue-600"
+                        className="rounded-full p-1 border-2 border-blue-600"
                       />
                     </div>
-                    <div className="flex-1 ">
+                    <div className="flex-1">
                       <p className="text-base sm:text-lg my-2">
-                        <span className="text-[#FD6F00] text-xl">"</span>{" "}
-                        {feedback.comment}
-                        <span className="text-[#FD6F00] text-xl">"</span>
+                        <span className="text-[#FD6F00] text-xl font-bold">
+                          "
+                        </span>{" "}
+                        {feedback.comment}{" "}
+                        <span className="text-[#FD6F00] text-xl font-bold">
+                          "
+                        </span>
                       </p>
                       <h4>
                         <span className="font-bold">Name</span> <br />{" "}

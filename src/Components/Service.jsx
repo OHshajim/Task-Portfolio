@@ -31,7 +31,7 @@ const Service = () => {
   return (
     <div>
       <SectionTitle title={"Services"} />
-      <div className="grid grid-cols-4 gap-5 my-5 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 m-5">
         {services.map((service) => (
           <div key={service.service} className="p-5 bg-[#F8F8F8] rounded-xl">
             <div
@@ -46,8 +46,10 @@ const Service = () => {
                 height={80}
               />
             </div>
-            <h3 className="text-3xl font-bold mt-4">{service.service}</h3>
-            <p className="text-xl mt-2">{service.description}</p>
+            <h3 className="text-2xl sm:text-3xl font-bold mt-4">
+              {service.service}
+            </h3>
+            <p className="text-lg sm:text-xl mt-2">{service.description}</p>
           </div>
         ))}
       </div>
