@@ -1,10 +1,9 @@
-import { SocialMedia } from "@/Shared/SocialMedia";
+import SocialMedia  from "@/Shared/SocialMedia";
 import Image from "next/image";
-import React from "react";
 
-export const Introduction = () => {
+const Introduction = () => {
   return (
-    <div>
+    <div id="home">
       <div className="hero ">
         <div className="flex  flex-col lg:flex-row-reverse">
           <div className="relative">
@@ -47,3 +46,4 @@ export const Introduction = () => {
     </div>
   );
 };
+export default Introduction;

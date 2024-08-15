@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
       <div className="hero ">
         <div className="flex  flex-col lg:flex-row">
           <div className="relative">
@@ -18,7 +18,7 @@ const About = () => {
             </div>
           </div>
           <div>
-            <h1 className="text-6xl font-semibold">About Me</h1>
+            <h2 className="text-6xl font-semibold">About Me</h2>
             <p className="py-6 text-xl ">
               Web designer passionate about creating beautiful, functional
               websites. I specialize in responsive design and intuitive user
