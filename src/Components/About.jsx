@@ -27,9 +27,7 @@ const About = () => {
             </p>
             <div className="flex flex-col gap-4">
               <div>
-                <div class=" text-2xl font-semibold ">
-                 UX
-                </div>
+                <div className=" text-2xl font-semibold ">UX</div>
                 <progress
                   className="progress progress-error w-full "
                   value="90"
@@ -37,9 +35,7 @@ const About = () => {
                 ></progress>
               </div>
               <div>
-                <div class=" text-2xl font-semibold ">
-                Website Design
-                </div>
+                <div className=" text-2xl font-semibold ">Website Design</div>
                 <progress
                   className="progress progress-error w-full "
                   value="85"
@@ -47,9 +43,7 @@ const About = () => {
                 ></progress>
               </div>
               <div>
-                <div class=" text-2xl font-semibold ">
-                App Design 
-                </div>
+                <div className=" text-2xl font-semibold ">App Design</div>
                 <progress
                   className="progress progress-error w-full "
                   value="95"
@@ -57,16 +51,13 @@ const About = () => {
                 ></progress>
               </div>
               <div>
-                <div class=" text-2xl font-semibold ">
-                Graphic Design 
-                </div>
+                <div className=" text-2xl font-semibold ">Graphic Design</div>
                 <progress
                   className="progress progress-error w-full "
                   value="90"
                   max="100"
                 ></progress>
               </div>
-              
             </div>
           </div>
         </div>
